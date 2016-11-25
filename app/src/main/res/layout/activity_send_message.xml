@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/sendActToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/sendActToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/main_toolbar_backgrnd"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <TextView
+                    android:id="@+id/sendToTitleToolbar"
+                    android:text="Send message: "
+                    android:gravity="center_horizontal|center_vertical"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/sendToContentHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_below="@+id/sendActToolbarLayout"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+                android:text="44"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/mainColorBlueTwoBtn"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:gravity="center"
+                android:background="@drawable/message_edit2_tex_tstyle"
+                android:layout_below="@+id/sendToContentHolder"
+                android:layout_toStartOf="@+id/sendMessageAct_sendBtn"
+                android:layout_marginEnd="11dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/sendMessageAct_recieverTelNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/message_edit2_tex_tstyle"
+                android:paddingBottom="8dp"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/mainColorBlueTwoBtn"
+                android:text="999-999-9999"
+                android:textSize="14sp"
+                android:layout_below="@+id/sendToContentHolder"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:id="@+id/sendMessageAct_contactSelectBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="end"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_add_contacts"
+                android:layout_below="@+id/sendToContentHolder"
+                android:layout_alignStart="@+id/sendMessageAct_messageTitle"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/sendMessageAct_addContactBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="end"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_keypad"
+                android:background="@android:color/transparent"
+                android:layout_below="@+id/sendToContentHolder"
+                android:layout_alignStart="@+id/sendMessageAct_charsCounter"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/messagesHistoryListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/sendMessageAct_messageTitle"
+            android:layout_below="@+id/sendToContentHolder"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:listSelector="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scrollbars="vertical"
+            android:transcriptMode="alwaysScroll"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/sendMessageAct_messageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sendMessageAct_editMessageText"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/mainColorBlueTwoBtn"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/your_message"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/sendMessageAct_charsCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sendMessageAct_editMessageText"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/mainColorBlueTwoBtn"
+            android:text="@string/char_counter"
+            android:textSize="15sp" />
+
+
+
+        <EditText
+            android:id="@+id/sendMessageAct_editMessageText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="60dp"
+            android:paddingBottom="10dp"
+            android:focusable="true"
+            android:textColor="@color/mainColorBlueTwoBtn"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/message_edit_tex_tstyle"
+            android:gravity="top|left"
+            android:hint="@string/write_your_message"
+            android:maxLines="3"
+            android:inputType="textMultiLine"
+            android:textAlignment="gravity"
+            android:textColorHint="#9E9E9E"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="80dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/noMessageHistoryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="59dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/mainColorBlueTwoBtn"
+            android:text="@string/no_history"
+            android:visibility="visible"
+            android:layout_below="@+id/sendToContentHolder"
+            android:layout_alignStart="@+id/sendMessageAct_messageTitle" />
+
+
+        <ImageButton
+            android:id="@+id/sendMessageAct_sendBtn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="120dp"
+            android:layout_marginRight="10dp"
+
+            android:background="@drawable/message_send_btn_style"
+            android:src="@drawable/sms_send_ic_t"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:weightSum="1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+
+            <ImageView
+
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:gravity="left"
+                android:id="@+id/imageView25" />
+
+            <TextView
+                android:text=" Only 0,03£/SMS"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:id="@+id/textView3"
+                android:layout_weight="0.28"
+                android:textColor="@color/colorAccent"
+                android:textStyle="normal|bold"
+                android:fontFamily="cursive"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

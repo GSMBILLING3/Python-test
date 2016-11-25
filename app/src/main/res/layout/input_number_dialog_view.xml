@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Enter number : "
+        android:background="@drawable/main_toolbar_backgrnd"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:textColor="@color/mainColorBlueOneBtn"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextDialogUserInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Example: (0)999 999 9999"
+        android:fontFamily="sans-serif-light"
+        android:inputType="number"
+        android:textColor="@color/mainColorBlueOneBtn"
+        android:textColorHint="#81d9e4"
+        android:maxLength="12"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/message_edit2_tex_tstyle"
+        >
+        <requestFocus />
+           </EditText>
+
+</LinearLayout>

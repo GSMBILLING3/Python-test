@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:weightSum="100"
+        tools:context=".AboutActivity"
+        tools:ignore="ContentDescription">
+
+
+        <TextView
+            android:id="@+id/loginActLogoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:gravity="center_horizontal"
+            android:text="SMS 2 UK"
+            android:fontFamily="cursive"
+            android:textColor="#42c76a"
+            android:textSize="56sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:text="@string/made_by"
+            android:fontFamily="cursive"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#42c76a"
+            android:textSize="14sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/for_customer"
+            android:fontFamily="cursive"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#42c76a"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edit_field_background_style"
+            android:ems="8"
+            android:focusableInTouchMode="true"
+            android:hint="@string/name"
+            android:inputType="textPersonName|textNoSuggestions|textFilter"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/mainColorBlueTwo"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edit_field_background_style"
+            android:ems="8"
+            android:focusable="true"
+            android:hint="@string/yours_e_mail"
+            android:inputType="textEmailAddress|textNoSuggestions|textFilter"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/mainColorBlueTwo"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/edit_field_background_style"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="top"
+            android:hint="@string/your_feedback"
+            android:inputType="textPersonName|textNoSuggestions|textFilter"
+
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/mainColorBlueTwo"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/sendbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/standart_btn_style"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="@string/send"
+            android:textColor="#fff"
+            android:layout_weight="0.11"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/standart_btn_style"
+        android:elevation="6dp"
+        android:src="@drawable/ic_reply"
+        />
+
+</android.support.design.widget.CoordinatorLayout>
+
+

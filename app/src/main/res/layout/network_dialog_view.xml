@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="No network found"
+        android:background="@drawable/main_toolbar_backgrnd"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/mainColorBlueOneBtn"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    <TextView
+        android:text="Do you want to turn on the internet?\nWithout it, SMSHUB can't function properly"
+        android:textSize="16sp"
+        android:textColor="@color/mainColorBlueOneBtn"
+        android:fontFamily="sans-serif-light"
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

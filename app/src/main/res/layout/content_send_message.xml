@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+
+    <include layout="@layout/activity_send_message" />
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/cantent_send"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="uk.co.gsmbilling.sms2uk.SendMessageActivity">
+
+        <com.kdotj.menu.FabMenu
+            android:id="@+id/fab_menu"
+            app:fm_icon="@drawable/ic_content_add"
+            app:fm_menu="@layout/sample_fab_menu_layout"
+            app:fm_menu_theme="light"
+            app:fm_fab_color="@color/colorAccent"
+            app:fm_show_labels="true"
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

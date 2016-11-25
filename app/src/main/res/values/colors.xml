@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1b6150</color>
+    <color name="colorPrimaryDark">#1d594a</color>
+    <color name="colorAccent">#42c76a</color>
+    <color name="title">#222222</color>
+    <color name="subtitle">#42c76a</color>
+
+    <color name="infoTextColor">#ffffff</color>
+    <color name="mainTextColorDark">#003C6A</color>
+    <color name="textColorLight">#42c76a</color>
+    <color name="showcaseDark">#42c76a</color>
+    <color name="showcaseAccent">#42c76a</color>
+
+    <color name="btnColorMainUnpressed">#42c76a</color>
+    <color name="btnColorMainPressed">#000000</color>
+    <color name="btnColorMainEnableFalse">#BDBDBD</color>
+    <color name="btnSupportColorMainUnpressed">#42c76a</color>
+    <color name="btnSupportColorMainPressed">#000000</color>
+
+    <color name="backGroundColor">#42c76a</color>
+    <color name="backGroundMenuItemColor">#42c76a</color>
+    <color name="editFieldColor">#E1F5FE</color>
+    <color name="editFieldHintColor">#42c76a</color>
+
+    <color name="white100">#ffffffff</color>
+    <color name="white25">#64ffffff</color>
+
+    <color name="mainColorBlueOne">#ffffff</color>
+    <color name="mainColorBlueTwo">#ffffff</color>
+    <color name="mainColorBlueOneBtn">#2d9c4e</color>
+    <color name="mainColorBlueTwoBtn">#42c76a</color>
+    <color name="mainColorRedOneBtn">#42c76a</color>
+    <color name="mainColorRedTwoBtn">#42c76a</color>
+    <color name="mainColorDarkOne">#ffffff</color>
+
+</resources>
