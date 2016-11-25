@@ -20,7 +20,7 @@
             android:layout_marginRight="15dp"
             android:layout_centerVertical="true"
             android:backgroundTint="@color/mainColorRedTwoBtn"
-            android:background="@drawable/user1" />
+            android:background="@drawable/ic_user1" />
 
         <TextView
             android:text="+087986787678"

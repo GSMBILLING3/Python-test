@@ -6,7 +6,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="uk.co.gsmbilling.sms2uk.TermsActivity"
+    tools:context="uk.co.gsmbilling.smshubsidemod.TermsActivity"
     tools:showIn="@layout/activity_terms">
 
 

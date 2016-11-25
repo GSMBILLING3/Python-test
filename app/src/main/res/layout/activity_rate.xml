@@ -2,13 +2,12 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:fitsSystemWindows="true">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="80dp"
+        android:paddingTop="60dp"
         android:orientation="vertical"
         >
 
@@ -62,7 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
                 android:layout_gravity="center_horizontal"
-                android:src="@drawable/uk" />
+                android:src="@mipmap/ic_launcher" />
 
             <TextView
                 android:id="@+id/rate_sms_rate"
@@ -79,6 +78,76 @@
                 android:textSize="20sp" />
         </LinearLayout>
 
+        <RelativeLayout
+
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:background="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/menuYourNumberTitle"
+                android:text="Your number: "
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/colorAccent"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/menuYourTelNumber"
+                android:text=" +48(039)34-995-999"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/menuYourNumberTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/menuYourBalanceTitle"
+                android:text="Your balance: "
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/colorAccent"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_below="@+id/menuYourNumberTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/menuYourBalanceCount"
+                android:text="£100"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="sans-serif-light"
+                android:layout_toRightOf="@+id/menuYourBalanceTitle"
+                android:layout_below="@+id/menuYourNumberTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </RelativeLayout>
 
     </LinearLayout>
 

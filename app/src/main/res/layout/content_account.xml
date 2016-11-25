@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".AccountActivity"
+        tools:context="uk.co.gsmbilling.smshubsidemod.AccountActivity"
         tools:ignore="ContentDescription">
 
         <LinearLayout
@@ -226,7 +226,7 @@
                     android:layout_marginBottom="12dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
-                    android:background="@drawable/support_btn_style"
+                    android:background="@drawable/standart_btn_style"
                     android:fontFamily="sans-serif-light"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"

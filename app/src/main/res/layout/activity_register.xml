@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="10"
-            android:theme="@style/ColoredHint">
+            >
 
             <EditText
                 android:id="@+id/register_input_name"
@@ -63,8 +63,7 @@
             android:id="@+id/register_layout_input_surname"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="10"
-            android:theme="@style/ColoredHint">
+            android:layout_weight="10">
 
             <EditText
                 android:id="@+id/register_input_surname"
@@ -87,8 +86,7 @@
             android:id="@+id/register_layout_input_email"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="10"
-            android:theme="@style/ColoredHint">
+            android:layout_weight="10">
 
             <EditText
                 android:id="@+id/register_input_email"
@@ -111,8 +109,7 @@
             android:id="@+id/register_layout_input_password"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="10"
-            android:theme="@style/ColoredHint">
+            android:layout_weight="10">
 
             <EditText
                 android:id="@+id/register_input_password"
@@ -135,8 +132,7 @@
             android:id="@+id/register_layout_input_confirm_password"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="10"
-            android:theme="@style/ColoredHint">
+            android:layout_weight="10">
 
             <EditText
                 android:id="@+id/register_input_confirm_password"

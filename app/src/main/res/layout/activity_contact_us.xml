@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:weightSum="100"
-        tools:context="uk.co.gsmbilling.sms2uk.ContactUsActivity"
+        tools:context="uk.co.gsmbilling.smshubsidemod.ContactUsActivity"
         tools:ignore="ContentDescription">
 
 

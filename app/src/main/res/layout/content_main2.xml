@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="yalantis.com.sidemenu.sample.Main2Activity"
+    tools:context="uk.co.gsmbilling.smshubsidemod.MainActivity"
     tools:showIn="@layout/activity_main2">
 
 </RelativeLayout>
